@@ -143,11 +143,12 @@ godot --headless --export-release "Web"     build/web/index.html
 | 溫習回賞與每日上限 | 同上 `REVIEW_STAMINA` / `REVIEW_COIN` / `REVIEW_STAMINA_CAP` / `REVIEW_COIN_CAP` |
 | 閃現時長（按記憶階） | 同上 `FLASH_SECS` |
 | 開卷重遇的評分 | 同上 `quality_of()`（依失誤與是否借道具） |
-| 品級評定規則 | 重新生成數據時的 `build_data.py`（見下） |
+| 品級評定規則 | 數據生成腳本 `build_data.py`（詩庫由 chinese-poetry 原始數據篩選而來） |
 | 配色、字號 | `scripts/core/palette.gd`、`scripts/autoload/ink.gd` 的 `F_*` |
 
 ## 五、數據與授權
 
+- **代碼**：MIT License（見 `LICENSE`）。
 - **詩文**：取自 [chinese-poetry](https://github.com/chinese-poetry/chinese-poetry)（MIT）中的
   全唐詩五言絕句全量數據（原文件 3985 首）。經篩選：僅保留「兩聯 × 五字」、
   標點規整、且字形盡在字體覆蓋範圍內的詩篇，共 **3708 首**。
